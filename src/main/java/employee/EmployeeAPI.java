@@ -15,7 +15,9 @@ import employee.util.StatusResponse;
 public class EmployeeAPI {
 	public static void main(String args[]){
 		port(8780);
-		
+		int x = 10;
+		int y = 10;
+		int z = x + y;
 		EmployeeService empService = new EmployeeServiceImpl();
 		
 		get("/employees", (request,response)->{
